@@ -1,4 +1,4 @@
-Forked from https://forums.alliedmods.net/showpost.php?p=2756041&postcount=220
+Based from https://forums.alliedmods.net/showpost.php?p=2756041&postcount=220
 
 # Prerequisites
 
