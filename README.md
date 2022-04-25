@@ -33,6 +33,7 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
   - Alternative: [Real Zoey Unlock](https://forums.alliedmods.net/showthread.php?t=308483) - (For Windows servers only)
 - [Upgrade Pack Fixes](https://forums.alliedmods.net/showpost.php?p=2698228&postcount=5) - fixes upgrade packs being removed when 4 survivors have used them.
 - [Defib Fix](https://forums.alliedmods.net/showthread.php?t=315483) - fixes defib getting wrong targets and reviving alive players.
+- [Dialogue Criteria Fix](https://forums.alliedmods.net/showthread.php?t=335875) - Not recommended with 4 survivor servers and no character changing plugins.
 - [Scene Adjustments/Fixes](https://forums.alliedmods.net/showthread.php?t=321127) - fixes friendly fire and mourn quotes for 5+ survivors (seems to stop working on map change for me. If this happens to you, you can add "sm plugins reload sceneadjustments.smx" at the end of your server.cfg to reload the plugin on every map change).
   - [Pre-Update Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2247536739) - Recommended workshop addon to be used in conjunction with Scene Adjustments plugin. The Last Stand update made a number of changes, one of which is that survivors no longer shout the name of the survivor that just died. This talker mod restores the old behavior and works in conjunction with this plugin. Just add the .vpk file to your server's addon folder. You can use the Steam Workshop Downloader to download addons files directly from the Steam Workshop.
 - [Save Weapon Co-Op](https://github.com/fbef0102/L4D2-Plugins/tree/master/l4d2_ty_saveweapons) - Saves weapons and health for extra survivors while transitioning to another map. ABM should already be able to do this for all human players, but not for bots. This plugin supports both.
@@ -43,3 +44,5 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
   - Use [Tonblader's config](https://forums.alliedmods.net/showpost.php?p=2727753&postcount=130) for both of these plugins.
 
 - [Left4Fix Extension](https://forums.alliedmods.net/showthread.php?t=219774) - (not to be confused with the Left-4-fix plugin collection) fixes versus score bug for extra survivors, I don't play versus so I haven't tested it.
+
+- [Dynamic Soundtrack Sets + L4D1 Music Fix] - Plays appropriate music for L4D1 and 2 survivors and fixes few L4D2 musics (Left 4 Death for example) being played in L4D1 maps instead of L4D1 ones.
