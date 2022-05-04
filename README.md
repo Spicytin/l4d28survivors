@@ -46,3 +46,68 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
 - [Left4Fix Extension](https://forums.alliedmods.net/showthread.php?t=219774) - (not to be confused with the Left-4-fix plugin collection) fixes versus score bug for extra survivors, I don't play versus so I haven't tested it.
 
 - [Dynamic Soundtrack Sets + L4D1 Music Fix](https://forums.alliedmods.net/showpost.php?p=2732709&postcount=26) - Plays appropriate music for L4D1 and 2 survivors and fixes few L4D2 musics (Left 4 Death for example) being played in L4D1 maps instead of L4D1 ones.
+
+# Player/Bot management & Difficulty Scaling
+
+
+There are 3 main choices for bot management and difficulty scaling:
+
+- [ABM](https://forums.alliedmods.net/showpost.php?p=2748953&postcount=517) - [(config guide)](https://gitlab.com/vbgunz/ABM)
+
+ABM is an all in one tool, however since it has not been updated in a while, some features don't work, for example the identity fix, the automodel feature and the model chooser menu, necessitating the use of survivor chat select plugin. It only lets you change a model for the survivor of the current map (either LD1 or LD2) but not both, even if enabled by other plugins. The settings for autodifficulty are also not as granular as other plugins. It's very good for server management, such as having teleport and respawn menus, and the ability to create and remove bots at will.
+
+If you only want the plugin to create new survivors when a new player joins, set
+> abm_minplayers "4" 
+
+in the abm.cfg file. If you just want to have all 8 survivors spawn as bots from the beginning and just have new players take over a bot when they join, set it to
+> abm_minplayers "8" 
+
+or however may survivors you want to start with, up to the amount set in sv_maxplayers in your server.cfg or listenserver.cfg file. ABM will also let you start with less than 4 survivors, if you want to just play with just 2 or 3 survivors instead of 4.
+
+If you want to let this plugin control the difficulty scaling, I recommend you lower the extra health given to a tank to make it more proportional to the extra number of players, such as setting it to:
+> abm_tankchunkhp "1000" 
+
+Across the different difficulties, this insures that the tank health is at 200% when you have 8 survivors.
+
+- [SuperVersus](https://forums.alliedmods.net/showpost.php?p=2722171&postcount=1311) - [(Updated gamedata file)](https://forums.alliedmods.net/showpost.php?p=2724932&postcount=1322)
+
+The plugin has been kept alive over the years but has older code compared to newer plugins. See [here](https://forums.alliedmods.net/showpost.php?p=2746267&postcount=1352) for more info.
+MaxSpecials amount may not be scaled correctly, just use
+"sm plugins reload l4d_superversus_latest.smx" (or whatever the name of your plugin file happens to be) after starting your server. See [here](https://forums.alliedmods.net/showpost.php?p=2756037&postcount=1369).
+
+Survivor management may not be as polished and may exhibit weird bugs such as requiring restart on Helm's Deep map, bots not being properly added or pruned, players being thrown to spectators team etc., but difficulty scaling is great.
+
+If you only want the plugin to create new survivors when a new player joins, set
+>l4d_static_minimum_survivor "4"
+
+and
+>l4d_survivor_limit "8" 
+
+in the l4d_superversus.cfg file. If you just want to have all 8 survivors spawn as bots from the beginning and just have new players take over a bot when they join, set it to
+>l4d_static_minimum_survivor "8"
+
+and
+>l4d_survivor_limit "8" 
+
+or however may survivors you want to start with. For more than 8 players set l4d_survivor_limit to match your sv_maxplayers value.
+
+- [Multislots](https://forums.alliedmods.net/showpost.php?p=2715546&postcount=249)
+- [CreateSurvivorBot](https://forums.alliedmods.net/showpost.php?p=2729883&postcount=16)
+- [Infected Bots Control](https://forums.alliedmods.net/showpost.php?p=2699220&postcount=1369)
+
+Multislots is stricly for player/bot management, so it's usually paired with infected bots control plugin for difficulty scaling. CreateSurvivorBot plugin is needed for Multislots.
+Do keep in mind that out of all the management plugins, Mulstislots and Infected Bots Control are the only ones so far that are still regularly receiving updates and bug fixes at this point in time. If this is important to you this combo is recommended.
+
+If you only want the plugin to create new survivors when a new player joins, set
+>l4d_multislots_max_survivors "4"
+
+and
+>l4d_multislots_spawn_survivors_roundstart "0" 
+
+in the l4dmultislots.cfg file. If you just want to have all 8 survivors spawn as bots from the beginning and just have new players take over a bot when they join, set it to
+>l4d_multislots_max_survivors "8"
+
+and
+>l4d_multislots_spawn_survivors_roundstart "1" 
+
+or however may survivors you want to start with. For more than 8 players set l4d_multislots_max_survivors to match your sv_maxplayers value.
