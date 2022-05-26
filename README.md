@@ -49,7 +49,6 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
 
 # Player/Bot management & Difficulty Scaling
 
-
 There are 3 main choices for bot management and difficulty scaling:
 
 - [ABM](https://forums.alliedmods.net/showpost.php?p=2748953&postcount=517) - [(config guide)](https://gitlab.com/vbgunz/ABM)
@@ -111,3 +110,49 @@ and
 >l4d_multislots_spawn_survivors_roundstart "1" 
 
 or however may survivors you want to start with. For more than 8 players set l4d_multislots_max_survivors to match your sv_maxplayers value.
+
+# Other Combinations
+
+You can also use different combinations of player management and difficulty scaling plugins. 
+
+1:
+
+- [ABM](https://forums.alliedmods.net/showpost.php?p=2748953&postcount=517)
+- [SuperVersus with No Player Management](https://forums.alliedmods.net/showpost.php?p=2750000&postcount=1356)
+
+When using ABM with another plugin that handles the zombie difficulty scaling, you must disable the difficulty scaling options in ABM's config. Mainly these:
+>abm_autohard "0" 
+
+and
+>abm_tankchunkhp "0"  
+
+2:
+
+- [ABM](https://forums.alliedmods.net/showpost.php?p=2748953&postcount=517)
+- [Infected Bots Control](https://forums.alliedmods.net/showpost.php?p=2699220&postcount=1369)
+
+3:
+
+- [Multislots](https://forums.alliedmods.net/showpost.php?p=2715546&postcount=249)
+- [CreateSurvivorBot](https://forums.alliedmods.net/showpost.php?p=2729883&postcount=16)
+- [SuperVersus with No Player Management](https://forums.alliedmods.net/showpost.php?p=2750000&postcount=1356)
+
+# Useful Extra Plugins
+
+Pick one of those campaign switcher plugins below:
+- [Improved Automatic Campaign Switcher](https://forums.alliedmods.net/showthread.php?t=308708) - Change to any campaign automatically after finale by voting. Requires MissionManager and its AdminMenu.
+- [CampaignShift](https://forums.alliedmods.net/showpost.php?p=2756038&postcount=36) - Change to campaign chronologically after end of the game credits or by vote to skip.
+  - [Transition Info Fix](https://forums.alliedmods.net/showthread.php?p=2762953) - Useful with one of the plugins above.
+
+- [Gear Transfer](https://forums.alliedmods.net/showthread.php?t=137616) - Allows transferring items such as molotovs, pipe bombs, defibs, etc. to teammates.
+- [Black & White Notifier](https://forums.alliedmods.net/showthread.php?p=2612147) - Notifies players when a survivor is in black and white status and will make them glow.
+- [Incapped Crawling with Animation](https://forums.alliedmods.net/showthread.php?t=137381) - Enables survivor crawling and adds the crawling animation to incapped players.
+- [Drop Secondary Improved](https://forums.alliedmods.net/showpost.php?p=2720089&postcount=26) (Plugin) or [Legacy Weapon Manager](https://steamcommunity.com/sharedfiles/filedetails/?id=2608563050) (Addon) - Makes survivors drop their secondary weapons in addition to their primary ones when dying.
+- [Respawn Rescue Closet](https://forums.alliedmods.net/showthread.php?t=223138) - You can also just use ABM's respawn menu although they will respawn with full heath. Either way, unfortunately respawn closets in the game can only respawn up to 3 survivors, creating closets with this plugin is a possible solution. Not sure if there is a way to make the game spawn more than 3.
+- [No Friendly-fire](https://forums.alliedmods.net/showthread.php?p=2559951) - This plugin blocks damage which also blocks survivor responses. Alternatively, just add these lines to your server.cfg/listenserver.cfg file. Survivors will still respond to friendly fire.
+
+> sm_cvar survivor_friendly_fire_factor_normal "0"    //default 0.1
+
+> sm_cvar survivor_friendly_fire_factor_hard "0"        //default 0.3 
+
+> sm_cvar survivor_friendly_fire_factor_expert "0"    //default 0.5  
