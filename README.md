@@ -45,7 +45,9 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
 
 - [Left4Fix Extension](https://forums.alliedmods.net/showthread.php?t=219774) - (not to be confused with the Left-4-fix plugin collection) fixes versus score bug for extra survivors, I don't play versus so I haven't tested it.
 
-- [Dynamic Soundtrack Sets + L4D1 Music Fix](https://forums.alliedmods.net/showpost.php?p=2732709&postcount=26) - Plays appropriate music for L4D1 and 2 survivors and fixes few L4D2 musics (Left 4 Death for example) being played in L4D1 maps instead of L4D1 ones.
+Pick one of these music plugins below (you can also combine both):
+- [Dynamic Soundtrack Sets](https://forums.alliedmods.net/showpost.php?p=2732709&postcount=26) - Plays appropriate music for L4D1 and 2 survivors.
+- [L4D1 Music Fix](https://github.com/LuxLuma/L4DMusic_stuff) - fixes few L4D2 musics (Left 4 Death for example) being played in L4D1 maps instead of L4D1 ones.
 
 # Player/Bot management & Difficulty Scaling
 
