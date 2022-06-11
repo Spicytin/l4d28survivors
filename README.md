@@ -142,6 +142,13 @@ and
 - [CreateSurvivorBot](https://forums.alliedmods.net/showpost.php?p=2729883&postcount=16)
 - [SuperVersus with No Player Management](https://forums.alliedmods.net/showpost.php?p=2750000&postcount=1356)
 
+# SI Limit & Spawn Management
+
+Incase if controlling special infected limit and spawn rates in ABM & SuperVersus didn't work for you, you can try adding one of these plugins. They may won't conflict with ABM / SuperVersus / Infected Bots Control:
+
+- [Balancer Spawn Infected](https://forums.alliedmods.net/showthread.php?p=2694407) - Balances SIs limit and spawn interval depending on the number of players.
+- [ZSpawn](https://forums.alliedmods.net/showthread.php?t=332272) - Modify director spawns. Also you can spawn special infecteds manually without affecting human players in versus. NEEDS SETTING zspawn_autotank_scav_score IN l4d2_zspawn.cfg TO 0 INSTEAD OF 10 TO AVOID SPAWNING SEVERAL TANKS IN SCAVENGE FINALES! Don't know why this was default.
+
 # Useful Extra Plugins
 
 Pick one of those campaign switcher plugins below:
@@ -161,3 +168,31 @@ Pick one of those campaign switcher plugins below:
 > sm_cvar survivor_friendly_fire_factor_hard "0"        //default 0.3 
 
 > sm_cvar survivor_friendly_fire_factor_expert "0"    //default 0.5  
+
+# Dedicated Server
+
+It's recommended to use a dedicated server for plugins, a local host/listenserver can exhibit weird bugs and crashes. Normally it's recommended to use SteamCMD however there is a simpler way.
+
+With Steam open, make sure that you have the option to show all tools and uninstalled items. 
+
+Look for Left 4 Dead 2 Dedicated Server and install it. It'll be an extra 9GB give or take. While you can hit play and start your dedicated server this way, it is not recommended since it will exhibit some weird bugs, such as not detecting steamids of players and showing them all as 0:0. Steam will also show you as "playing" the dedicated server, even if you are playing L4D2. This means they can't easily join your lobby or game from the main menu and will have to connect directly. You would also have to setup Sourcemod with username and password authentication since steamid will be borked, which is not recommended. While starting it this way does let you start and stop the game and server at will, it causes too many weird issues.
+
+For simple LAN server to play with friends, create a batch file, such as "runserver.bat" in the \common\Left 4 Dead 2 Dedicated Server folder, with the following code:
+
+> start "" srcds -usercon -console -insecure -dev -game left4dead2 -port 27000 +hostname "Game Server" +map c8m1_apartment +maxplayers 8 +sv_lan 1  
+
+We don't really need the extra -debug and -condebug options but you can add them if you wish. To play with people over the internet, change sv_lan to 0 and forward the port in your router. The values in your server.cfg will override what's here. I personally prefer to remove "-console" to get an old-school looking interface to launch your server. It is limited in that it won't allow you to select all maps, however that doesn't matter because the server will load whatever you pick from the lobby anyway. The main reason I choose the gui is because it has autocomplete when typing in commands and values.
+
+You can then create a shortcut to the batch file and place it on your desktop. To play on the same machine as the dedicated server, you can launch the batch file before starting Steam. If you do that, you can start and exit L4D2 as many times as you want as long as the server is still running. If Steam is already running, you have to launch L4D2 first, and then the server. When done this way, if you exit L4D2, Steam will show that you are already "playing" L4D2 and will not let you launch it. The only way to get back in without closing your dedicated server is to launch the L4D2 game executable directly. You will get a message box saying that you are running it with the -insecure option since that is how we have the server launched. You can ignore it since we are not playing on Valve servers.
+
+To run commands inside your game, you will need to add your steamid to the \addons\sourcemod\configs\admins_simple.ini file. You can use a steamid finder online or copy your steamid from abm log file if using that plugin. To give yourself admin privileges, just add:
+
+> "<steamid>"    "z"  
+  
+to the file. Replace the <steamid> with your steamid. To change variables from within the game and run some commands, you will need to add:
+    
+> rcon_password "PASSWORD"
+    
+to both the server.cfg of your dedicated server and the autoexec.cfg in your game folder (create it if it doesn't exist). Most plugin commands should just run as is without needing rcon, such as ABM commands. I recommend binding your most commmonly used commands to keys. 
+   
+You can load and unload sourcemod plugins without restarting your server. If you add new plugins or move some to the disabled folder you can use "sm plugins refresh" and sourcemod will unload plugins that are no longer there and load any new plugins. If you are replacing a plugin with the same name you will have to use "sm plugins load nameofplugin.smx" or the number listed using "sm plugins list".
