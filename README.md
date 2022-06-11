@@ -187,9 +187,9 @@ You can then create a shortcut to the batch file and place it on your desktop. T
 
 To run commands inside your game, you will need to add your steamid to the \addons\sourcemod\configs\admins_simple.ini file. You can use a steamid finder online or copy your steamid from abm log file if using that plugin. To give yourself admin privileges, just add:
 
-> "<steamid>"    "z"  
+> "steamid"    "z"  
   
-to the file. Replace the <steamid> with your steamid. To change variables from within the game and run some commands, you will need to add:
+to the file. Replace the "steamid" with your steamid. To change variables from within the game and run some commands, you will need to add:
     
 > rcon_password "PASSWORD"
     
