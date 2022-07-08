@@ -196,3 +196,21 @@ to the file. Replace the "steamid" with your steamid. To change variables from w
 to both the server.cfg of your dedicated server and the autoexec.cfg in your game folder (create it if it doesn't exist). Most plugin commands should just run as is without needing rcon, such as ABM commands. I recommend binding your most commmonly used commands to keys. 
    
 You can load and unload sourcemod plugins without restarting your server. If you add new plugins or move some to the disabled folder you can use "sm plugins refresh" and sourcemod will unload plugins that are no longer there and load any new plugins. If you are replacing a plugin with the same name you will have to use "sm plugins load nameofplugin.smx" or the number listed using "sm plugins list".
+
+# To have an 8 player lobby:
+
+- [8 slots lobby fixed](https://steamcommunity.com/sharedfiles/filedetails/?id=2754956355)
+
+OR
+- [8 Player Lobby](https://steamcommunity.com/sharedfiles/filedetails/?id=2276071285) - Requires you to choose it from custom mutation list and then change game type to your desired one.
+
+In your client's autoexec.cfg file, make sure to add your server's ip and port numbers, whether you're playing on the same computer as the dedicated server or if on another computer.
+
+> mm_dedicated_force_servers "ip:port"  
+
+If you don't, you will have to run this command every time you start the game.
+Then just pick "Best Available Dedicated Server" when creating your lobby. If your are running a listen/local server, just pick the "Local Server" option and make sure you started the game with the -insecure launch option.
+
+If playing a LAN game, all players on the network will see your name in the lower left hand corner of the main menu screen where they can then join your lobby. Should also work for people on your friends list over the internet. Just remember to forward the port in your router. If players over the internet have issues joining the game when you start it from the lobby, they can just connect directly using "connect ip:port".
+
+If loading screen gets stuck, just press ESC key ones and the map will finish loading. It doesn't happen when loading a campaign for the first time, but it does happen when advancing to the next map, at least for me.
