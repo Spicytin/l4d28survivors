@@ -7,9 +7,10 @@ Based from https://forums.alliedmods.net/showpost.php?p=2756041&postcount=220
 
 - [L4DToolZ Metamod plugin](https://github.com/Accelerator74/l4dtoolz/releases)
 - [Left 4 DHooks Direct](https://forums.alliedmods.net/showthread.php?t=321696)
-- [DHooks extension](https://forums.alliedmods.net/showthread.php?p=2588686#post2588686)
 - [Stripper:Source](http://www.bailopan.net/stripper/snapshots/1.2/)
     
+Note: You don't need DHooks extension for now, it was already included in Sourcemod 1.11 and up.
+
 # Sourcemod Plugins
 
 Configuration files for all the plugins are located in the \cfg\sourcemod directory of your server/game folder.
