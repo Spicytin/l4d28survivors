@@ -36,7 +36,7 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
 - [Defib Fix](https://forums.alliedmods.net/showthread.php?t=315483) - Fixes defib getting wrong targets and reviving alive players.
 - [Dialogue Criteria Fix](https://forums.alliedmods.net/showthread.php?t=335875) - Makes the 8 survivors interact more in campaigns.
 - [8 Player Modified Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2462741269) - (Read description of the mod.)
-  - [Actively Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2696358865) -. Changes survivor characters to actively speak their lines like saying sorry after being friendly fire to another survivor, etc... Recommended to be used with 8 Player Talker mod, since it fixes the mourns for 5+ survivors.
+  - [Actively Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2696358865) - This workshop addon changes survivor characters to actively speak their lines like saying sorry after being friendly fire to another survivor, etc... Recommended to be used with 8 Player Talker mod, since it fixes the mourns for 5+ survivors.
 
 OR
 - [Scene Adjustments/Fixes](https://forums.alliedmods.net/showthread.php?t=321127) - Fixes friendly fire and mourn quotes for 5+ survivors (seems to stop working on map change for me. If this happens to you, you can add "sm plugins reload sceneadjustments.smx" at the end of your server.cfg to reload the plugin on every map change).
@@ -158,6 +158,8 @@ Pick one of those campaign switcher plugins below:
 - [CampaignShift](https://forums.alliedmods.net/showpost.php?p=2756038&postcount=36) - Change to campaign chronologically after end of the game credits or by vote to skip.
   - [Transition Info Fix](https://forums.alliedmods.net/showthread.php?p=2762953) - Useful with one of the plugins above.
 
+- [Shop](https://forums.alliedmods.net/showthread.php?t=332186) - Adds an shop ingame with points to buy weapons and items during gameplay.
+  - [HarryPotter version](https://forums.alliedmods.net/showpost.php?p=2731889&postcount=18)
 - [Gear Transfer](https://forums.alliedmods.net/showthread.php?t=137616) - Allows transferring items such as molotovs, pipe bombs, defibs, etc. to teammates.
 - [Black & White Notifier](https://forums.alliedmods.net/showthread.php?p=2612147) - Notifies players when a survivor is in black and white status and will make them glow.
 - [Incapped Crawling with Animation](https://forums.alliedmods.net/showthread.php?t=137381) - Enables survivor crawling and adds the crawling animation to incapped players.
