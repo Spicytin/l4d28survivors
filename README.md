@@ -26,15 +26,16 @@ OR
 The following plugins from the Left-4-fix collection replace the fixes from the older plugin except for the survivor finale score bug:
 - [Better_Charger_Collision+patch](https://forums.alliedmods.net/showthread.php?t=315482)
 - [Witch fixes](https://forums.alliedmods.net/showthread.php?p=2647014)
-- [Defib Fix](https://forums.alliedmods.net/showthread.php?t=315483) - fixes defib getting wrong targets and reviving alive players.
 
 The 8+ players bug fixes extension is considered to be a bit outdated but it seems to still work. Left-4-fix collection is newer and has replacements for most of the fixes except for the "finale score bug" fix. According to the 8+ players bug fixes thread it's supposed to fix how many survivors have escaped instead of showing them as deceased. Other bot management plugins may have this type of fix already included so using the newer Left-4-fix plugins might be preferable.
 
 - [Survivor Character Fixes](https://forums.alliedmods.net/showthread.php?p=2771265)
   - Alternative: [Real Zoey Unlock](https://forums.alliedmods.net/showthread.php?t=308483) - (For Windows servers only)
 - [Upgrade Pack Fixes](https://forums.alliedmods.net/showpost.php?p=2698228&postcount=5) - fixes upgrade packs being removed when 4 survivors have used them.
+- [Defib Fix](https://forums.alliedmods.net/showthread.php?t=315483) - fixes defib getting wrong targets and reviving alive players.
 - [Dialogue Criteria Fix](https://forums.alliedmods.net/showthread.php?t=335875) - Not recommended with 4 survivor servers and no character changing plugins.
-- [8 Player Modified Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2462741269) - Self-explainatory.
+- [8 Player Modified Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2462741269) - (Read description of the mod.)
+  - [Actively Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2696358865) -. Changes survivor characters to actively speak their lines like saying sorry after being friendly fire to another survivor, etc... Recommended to be used with 8 Player Talker mod, since it fixes the mourns for 5+ survivors.
 
 OR
 - [Scene Adjustments/Fixes](https://forums.alliedmods.net/showthread.php?t=321127) - fixes friendly fire and mourn quotes for 5+ survivors (seems to stop working on map change for me. If this happens to you, you can add "sm plugins reload sceneadjustments.smx" at the end of your server.cfg to reload the plugin on every map change).
