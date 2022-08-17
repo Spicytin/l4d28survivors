@@ -35,6 +35,7 @@ The 8+ players bug fixes extension is considered to be a bit outdated but it see
 - [Upgrade Pack Fixes](https://forums.alliedmods.net/showpost.php?p=2698228&postcount=5) - Fixes upgrade packs being removed when 4 survivors have used them.
 - [Defib Fix](https://forums.alliedmods.net/showthread.php?t=315483) - Fixes defib getting wrong targets and reviving alive players.
 - [Dialogue Criteria Fix](https://forums.alliedmods.net/showthread.php?t=335875) - Makes the 8 survivors interact more in campaigns.
+- [Sacrifice Kill Bill Fix](https://forums.alliedmods.net/showthread.php?p=2749560) - Lets Bill in 8 survivors set trigger the "Kill Bill" achievement in The Sacrifice campaign.
 - [8 Player Modified Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2462741269) - (Read description of the mod.)
   - [Actively Talker](https://steamcommunity.com/sharedfiles/filedetails/?id=2696358865) - This workshop addon changes survivor characters to actively speak their lines like saying sorry after being friendly fire to another survivor, etc... Recommended to be used with 8 Player Talker mod, since it fixes the mourns for 5+ survivors.
 
