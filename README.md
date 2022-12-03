@@ -30,7 +30,7 @@ The following plugins from the Left-4-fix collection replace the fixes from the 
 
 The 8+ players bug fixes extension is considered to be a bit outdated but it seems to still work. Left-4-fix collection is newer and has replacements for most of the fixes except for the "finale score bug" fix. According to the 8+ players bug fixes thread it's supposed to fix how many survivors have escaped instead of showing them as deceased. Other bot management plugins may have this type of fix already included so using the newer Left-4-fix plugins might be preferable.
 
-- [Survivor Character Fixes](https://forums.alliedmods.net/showthread.php?p=2771265)
+- [~~Survivor Character Fixes~~](https://forums.alliedmods.net/showthread.php?p=2771265) Use the alternate plugin for now this time due to its signature being broken as of latest sourcemod version. 
   - Alternative: [Real Zoey Unlock](https://forums.alliedmods.net/showthread.php?t=308483) - (For Windows servers only)
 - [Upgrade Pack Fixes](https://forums.alliedmods.net/showpost.php?p=2698228&postcount=5) - Fixes upgrade packs being removed when 4 survivors have used them.
 - [Defib Fix](https://forums.alliedmods.net/showthread.php?t=315483) - Fixes defib getting wrong targets and reviving alive players.
