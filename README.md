@@ -165,7 +165,7 @@ Pick one of those campaign switcher plugins below:
 - [Black & White Notifier](https://forums.alliedmods.net/showthread.php?p=2612147) - Notifies players when a survivor is in black and white status and will make them glow.
 - [Incapped Crawling with Animation](https://forums.alliedmods.net/showthread.php?t=137381) - Enables survivor crawling and adds the crawling animation to incapped players.
 - [Drop Secondary Improved](https://forums.alliedmods.net/showpost.php?p=2720089&postcount=26) (Plugin) or [Legacy Weapon Manager](https://steamcommunity.com/sharedfiles/filedetails/?id=2608563050) (Addon) - Makes survivors drop their secondary weapons in addition to their primary ones when dying.
-- [Respawn Rescue Closet](https://forums.alliedmods.net/showthread.php?t=223138) - You can also just use ABM's respawn menu although they will respawn with full heath. Either way, unfortunately respawn closets in the game can only respawn up to 3 survivors, creating closets with this plugin is a possible solution. Not sure if there is a way to make the game spawn more than 3.
+- [8/5+ Survivor Rescue Closet](https://forums.alliedmods.net/showthread.php?p=2794143) - Allows 5 or more survivors in the rescue closets.
 - [No Friendly-fire](https://forums.alliedmods.net/showthread.php?p=2559951) - This plugin blocks damage which also blocks survivor responses. Alternatively, just add these lines to your server.cfg/listenserver.cfg file. Survivors will still respond to friendly fire.
 
 > sm_cvar survivor_friendly_fire_factor_normal "0"    //default 0.1
